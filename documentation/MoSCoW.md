@@ -26,20 +26,20 @@ Browser speech to text- We could implement the free Web Speech API so users can 
 Source Citations- We could have information of where we got the information for the chatbot to talk about (that is a weird sentence) like did we get it from wikipedia or did we find it from a forum and so on. (**very good point. Should be included in the functional requirements.**) The system shall provide the source or sources supporting its response when requested by the user.
 
 Dynamic side panel- There could be a side panel that changes, either showing different photos of Gorbachev changing expressions, or we could show photos of what we are talking about, this could link in to having certain prompts that the chatbot will respond differently to. If we ask about the fall of the berlin wall we could change the panel to a photo of the berlin wall. (**very good point. Should be included in the functional requirements.**) -> 
-Functional: The system shall occasionally provide pictures relevant to the event or topic being discussed during a conversation. 
-Functional: The system shall provide a picture relevant to the user's request when the user explicitly requests one.
-Functional: The system shall provide the model with a list of available historical pictures that can be retrieved and sent to the user upon request.
+* *FK: The system shall occasionally provide pictures relevant to the event or topic being discussed during a conversation.*
+* FK: *The system shall provide a picture relevant to the user's request when the user explicitly requests one.*
+* FK: *The system shall provide the model with a list of available historical pictures that can be retrieved and sent to the user upon request.*
 
 
-* The system shall display an informative error message when an operation fails, explaining the nature of the error where possible.
+* FK: The system shall display an informative error message when an operation fails, explaining the nature of the error where possible.
 
-* The system shall allow users to select and delete one or more conversations from their conversation history.
+* FK: The system shall allow users to select and delete one or more conversations from their conversation history.
 
-* The system shall allow users to continue previous conversations from the conversation history.
+* FK: The system shall allow users to continue previous conversations from the conversation history.
   
-* The system shall record and store the history of conversations between the user's account and the chatbot.
+* FK: The system shall record and store the history of conversations between the user's account and the chatbot.
 
-* The system shall allow users to switch between light mode and dark mode.
+* FK: The system shall allow users to switch between light mode and dark mode.
 
 * NFK: The system shall maintain an uptime of at least 99% during scheduled operating hours.
 * NFK: The system shall successfully process at least 99% of API requests made through the backend under normal operating conditions.
