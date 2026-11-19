@@ -19,16 +19,55 @@ Interactive Follow-ups- I debated putting this in could have but I feel like thi
    
 **C- could have**
 
-Browser speech to text- We could implement the free Web Speech API so users can use their voice to talk directly to the chatbot.
+*side note: Should consider accessibility requirements as well* ->
 
-Source Citations- We could have information of where we got the information for the chatbot to talk about (that is a weird sentence) like did we get it from wikipedia or did we find it from a forum and so on.
+Browser speech to text- We could implement the free Web Speech API so users can use their voice to talk directly to the chatbot. (**very good point. Should be included in the functional requirements.**)
 
-Dynamic side panel- There could be a side panel that changes, either showing different photos of Gorbachev changing expressions, or we could show photos of what we are talking about, this could link in to having certain prompts that the chatbot will respond differently to. If we ask about the fall of the berlin wall we could change the panel to a photo of the berlin wall.
+Source Citations- We could have information of where we got the information for the chatbot to talk about (that is a weird sentence) like did we get it from wikipedia or did we find it from a forum and so on. (**very good point. Should be included in the functional requirements.**) The system shall provide the source or sources supporting its response when requested by the user.
 
+Dynamic side panel- There could be a side panel that changes, either showing different photos of Gorbachev changing expressions, or we could show photos of what we are talking about, this could link in to having certain prompts that the chatbot will respond differently to. If we ask about the fall of the berlin wall we could change the panel to a photo of the berlin wall. (**very good point. Should be included in the functional requirements.**) -> 
+* *FK: The system shall occasionally provide pictures relevant to the event or topic being discussed during a conversation.*
+* FK: *The system shall provide a picture relevant to the user's request when the user explicitly requests one.*
+* FK: *The system shall provide the model with a list of available historical pictures that can be retrieved and sent to the user upon request.*
+
+
+* FK: The system shall display an informative error message when an operation fails, explaining the nature of the error where possible.
+
+* FK: The system shall allow users to select and delete one or more conversations from their conversation history.
+
+* FK: The system shall allow users to continue previous conversations from the conversation history.
+  
+* FK: The system shall record and store the history of conversations between the user's account and the chatbot.
+
+* FK: The system shall allow users to switch between light mode and dark mode.
+
+* NFK: The system shall maintain an uptime of at least 99% during scheduled operating hours.
+* NFK: The system shall successfully process at least 99% of API requests made through the backend under normal operating conditions.
+* NFK: The chatbot shall provide historically accurate and consistent responses based on its approved knowledge sources.
+* NFK: The system shall provide clear and understandable error messages when something goes wrong.
+* NFK: The system shall provide a mechanism for deleting stored conversation data where applicable.
+* NFK: The system shall encrypt data during transmission and storage to provide a basic level of security.
+* NFK: The system shall limit the size of user inputs to prevent excessive resource consumption.
+* NFK: The system shall temporarily restrict requests from users who exceed predefined usage limits.
+**Thats a tricky one: The system shall obtain user consent before using non-essential cookies where legally required.**
 **W- won’t have**
 
-User Authentication-  There is no need for user authentication if this is a LocalHost, if this was an actual website we would need it, but this is more like a demo making it unnecessary.
+(User Authentication-  There is no need for user authentication if this is a LocalHost, if this was an actual website we would need it, but this is more like a demo making it unnecessary.)->
 
-Public Rate Limiting and Security- since this won’t be public there is almost no need for any security, unless Ben has it out for us and decided to be evil.
+* FK: The system shall allow the user to login using their email address and password.
 
-Cloud deployment and scaling- this being local means we don’t need to think about making it accessible anywhere at all times through something like google cloud, we just need it to work locally, as for scaling, this is meant to only have one person at a time for now.
+* FK: The system shall allow the user to create a new profile using their email address and (password.
+
+
+Public Rate Limiting and Security- since this won’t be public there is almost no need for any security, unless Ben has it out for us and decided to be evil.) That's funny. I doubt he would do something like that but he pretty every answers he gives seems to lead in the same direction "Ask yourself if you need it"-> 
+* FK: The system shall allow the user to reset their password through the log in interface.
+
+Cloud deployment and scaling- this being local means we don’t need to think about making it accessible anywhere at all times through something like google cloud, we just need it to work locally, as for scaling, this is meant to only have one person at a time for now. I feel like these words are very ambiguous "scaling" and "cloud deployment". Could be worth investigating.
+* NFK: The system shall notify users when the chatbot is temporarily unavailable due to maintenance or unexpected failures.
+* NFK: The system shall maintain an availability of at least 99% over each 7-day period.
+* NFK: During any unscheduled maintenance hours the system shall go back online within 12 hours.
+* NFK: The system shall require authorised maintenance personnel to complete two-factor authentication before granting access to administrative functionality.
+* NFK: The system shall validate user input to prevent malicious code or scripts from being executed.
+* NFK: The system shall implement protection against common web application vulnerabilities.
+* NFK: The system shall restrict modifications to the chatbot's knowledge base to authorised personnel.
+* NFK: The system shall ensure that software dependencies and components are regularly updated to address known security vulnerabilities.
