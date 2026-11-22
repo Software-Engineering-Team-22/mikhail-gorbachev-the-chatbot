@@ -52,7 +52,7 @@
 * NFK: The chatbot shall provide historically accurate and consistent responses based on its approved knowledge sources.
 * NFK: The system shall provide clear and understandable error messages when something goes wrong.
   
-* NFK: The system shall encrypt data during transmission and storage to provide a basic level of security.???(how important is security)
+* NFK: The system shall enforce HTTPS to encrypt communication between the frontend and backend.
 
 * NFK: The system shall limit the size of user inputs to prevent excessive resource consumption.
 * NFK: The system shall temporarily restrict requests from users who exceed predefined usage limits.
