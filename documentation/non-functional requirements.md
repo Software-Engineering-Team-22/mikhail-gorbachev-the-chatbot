@@ -60,8 +60,6 @@
 ### Security
 - The system shall prevent unauthorised access to stored conversation histories.
  
-- The system shall provide a mechanism for deleting stored conversation data where applicable.
- 
 - The system shall require authorised maintenance personnel to complete two-factor authentication before granting access to administrative functionality.
 
 - The system shall encrypt data during transmission and storage to provide a basic level of security.
@@ -78,6 +76,7 @@
 
 - The system shall ensure that software dependencies and components are regularly updated to address known security vulnerabilities.
 
+- The system shall ensure that predefined responses are stored securely and are not directly exposed or transmitted within external API requests.
 
 
 ### Legal and regulatory compliance
