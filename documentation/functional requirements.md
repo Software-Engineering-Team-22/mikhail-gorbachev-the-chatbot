@@ -28,4 +28,14 @@
 
 - The system shall allow the user to reset their password through the log in interface.
 
-  
+- The system shall provide a debug mode that allows authorised developers to inspect system behaviour and identify errors.
+
+- The system shall provide a picture relevant to the user's request when the user explicitly requests one.
+
+- The system shall provide the model with a list of available historical pictures that can be retrieved and sent to the user upon request.
+
+- The system shall obtain explicit user consent before storing or accessing non-essential cookies where legally required.
+
+- The system may use predefined responses when discussing specific historical topics or areas of history.
+
+- The system shall adopt a conversational personality and communication style that reflects the historical period and character of the historical figure being portrayed.
