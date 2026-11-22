@@ -62,7 +62,7 @@
  
 - The system shall require authorised maintenance personnel to complete two-factor authentication before granting access to administrative functionality.
 
-- The system shall encrypt data during transmission and storage to provide a basic level of security.
+- The system shall enforce HTTPS to encrypt communication between the frontend and backend.
 
 - The system shall validate user input to prevent malicious code or scripts from being executed.
 
